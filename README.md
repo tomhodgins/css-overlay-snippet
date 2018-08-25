@@ -44,22 +44,19 @@ This snippet works by copying the JavaScript code from [index.js](index.js) and 
       height: 80%;
     }
   `
-  textarea.dataset.css = 'overlay'
   textarea.addEventListener(
     'input', 
     e => localStorage.css_overlay = virtual_stylesheet.innerHTML = textarea.value
   )
   if (localStorage.css_overlay) {
-
     textarea.value = localStorage.css_overlay
-
   }
+  textarea.dataset.css = 'overlay'
 
   document.head.appendChild(overlay_styles)
   document.head.appendChild(virtual_stylesheet)
   document.body.appendChild(textarea)
-
 })()
 ```
 
-> TIP: Once you have pasted a snippet into your browser's JS console, you can press the up arrow on your keyboard (`&uarr;`) to view the history of past commands you have entered.
+> TIP: Once you have pasted a snippet into your browser's JS console, you can press the up arrow on your keyboard to view the history of past commands you have entered.

@@ -27,19 +27,16 @@
       height: 80%;
     }
   `
-  textarea.dataset.css = 'overlay'
   textarea.addEventListener(
     'input', 
     e => localStorage.css_overlay = virtual_stylesheet.innerHTML = textarea.value
   )
   if (localStorage.css_overlay) {
-
     textarea.value = localStorage.css_overlay
-
   }
+  textarea.dataset.css = 'overlay'
 
   document.head.appendChild(overlay_styles)
   document.head.appendChild(virtual_stylesheet)
   document.body.appendChild(textarea)
-
 })()

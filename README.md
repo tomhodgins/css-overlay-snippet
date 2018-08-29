@@ -2,7 +2,7 @@
 
 **A live CSS debugging stylesheet**
 
-This is a code snippet that can be pasted into the web browser after loading any site that will add an overlay where you can type CSS styles that will also be applied to thr page loaded in the browser.
+This is a code snippet that can be pasted into the web browser after loading any site that will add an overlay where you can type CSS styles that will also be applied to the page loaded in the browser.
 
 ## About
 

@@ -2,7 +2,7 @@
 (() => {
   let overlay_styles = document.createElement('style')
   let virtual_stylesheet = document.createElement('style')
-  let textarea = document.createElement('textarea');
+  let textarea = document.createElement('textarea')
 
   overlay_styles.textContent = `
     [data-css=overlay] {
@@ -29,7 +29,7 @@
   `
   textarea.addEventListener(
     'input', 
-    e => localStorage.css_overlay = virtual_stylesheet.innerHTML = textarea.value
+    e => localStorage.css_overlay = virtual_stylesheet.textContent = textarea.value
   )
   if (localStorage.css_overlay) {
     textarea.value = localStorage.css_overlay
